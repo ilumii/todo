@@ -50,10 +50,10 @@ def userdata():
     
 @app.route('/delete/<id>/<username>', methods=['POST','GET'])
 def dele(id,username):
-    cookies= {'auth':'sillyauth'}
-    num=id
-    x=requests.post('https://hunter-todo-api.herokuapp.com/auth', cookies=cookies, json={"username":username})
-    y=requests.delete('https://hunter-todo-api.herokuapp.com/todo-item/{{num}}', cookies=x.cookies)
+#     cookies= {'auth':'sillyauth'}
+#     num=id
+#     x=requests.post('https://hunter-todo-api.herokuapp.com/auth', cookies=cookies, json={"username":username})
+#     y=requests.delete('https://hunter-todo-api.herokuapp.com/todo-item/{{num}}', cookies=x.cookies)
     return render_template('/login.html')
 
 @app.route('/register')
