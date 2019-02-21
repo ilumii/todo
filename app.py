@@ -6,7 +6,7 @@ app = Flask(__name__)
 # def Git_Pages():
 #     return redirect("https://ilumii.github.io", code=302)
 
-with open('venv\data.json') as f:
+with open('data.json') as f:
         data = json.load(f)
 
 # print(json.dumps(data, indent=2))
