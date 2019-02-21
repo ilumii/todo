@@ -71,5 +71,5 @@ def new_user():
         return render_template('register.html', text='username taken')
 
 if __name__ == "__main__":
-        port = int(os.enviorn.get("PORT",5000))
-        app.run(host="0.0.0.0", port=port, threaded=True)
+	port = int(os.environ.get("PORT", 5000))
+	app.run(host="0.0.0.0", port=port, threaded=True)
