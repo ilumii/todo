@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 style="text-align:center">User: {{username}}</h1>
+            {% for item in data %}
+               <div>
+                   <h2>Task: {{item["content"]}}</h2>
+                    <p>Status(completed?): {{item["completed"]}}</p>
+                    <p>Task ID: {{item["id"]}}</p>
+                    <br>
+                    <a href="/delete/{{item["id"]}}/{{username}}">delete</a> <a href="/complete">complete</a> 
+               </div>
+            {% endfor %}
+    </body>
+</html>

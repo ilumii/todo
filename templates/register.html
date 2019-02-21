@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 style="text-align:center">Register</h1>
+        <p style="text-align:center">{{text}}</p>
+        <form action="{{ url_for('new_user') }}" method="post" style="text-align: center">
+                Username:<input type="text" name="username" value={{request.form.username}}><br>
+                <input type="button" value="login" onclick="window.location.href='/';"/><input type="submit" value="Register">
+        </form>
+    </body>
+</html>

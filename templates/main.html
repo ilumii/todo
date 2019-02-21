@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 style="text-align:center">Steven Li</h1>
+        <img src="https://i.kym-cdn.com/entries/icons/original/000/027/475/Screen_Shot_2018-10-25_at_11.02.15_AM.png" style="width:20%;height:20%;">
+        <ul>
+            <li>
+                Im a student at hunter <a href="www.hunter.cuny.edu">Hunter college</a>
+            </li>
+            <li>
+                i am a <a href="https://en.wikipedia.org/wiki/Computer_science">computer science</a> major
+            </li>
+            <li>
+                i work at boba guys and we make colorful drinks <a href="http://www.bobaguys.com/"><img src="https://static1.squarespace.com/static/50ce46ece4b01020c34fd52b/t/5bb6848ea4222f5c3a0cce1b/1538688147261/Screen+Shot+2018-10-04+at+2.22.04+PM.png?format=500w" style="width:10%;height:10%;"></a>
+            </li>
+            <li>
+                you can follow me on insta <a href="https://www.instagram.com/joylumii/"> here </a> ;)
+            </li>
+            <li>
+                Here is a <a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g"> link </a> to a song i think has a amusing name to it
+            </li>
+        </ul>
+        <h1>Data</h1>
+        <ul>
+            {% for list in file %}
+                <li>{{list}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
